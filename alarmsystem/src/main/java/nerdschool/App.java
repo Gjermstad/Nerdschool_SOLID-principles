@@ -8,6 +8,7 @@ public class App {
     FireSensor fireSensor = new FireSensor();
     SmokeSensor smokeSensor = new SmokeSensor();
     ControlUnit controlUnit = new ControlUnit(fireSensor, smokeSensor);
+    ConsoleSensorViewer consoleSensorViewer = new ConsoleSensorViewer();
 
     Scanner scanner = new Scanner(System.in);
     String input = "";
