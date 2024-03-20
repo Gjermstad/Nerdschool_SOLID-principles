@@ -62,7 +62,7 @@ classDiagram
     }
 ```
 
-:pencil2: Add a private instance variable of type `SensorViewer` to our `ControlUnit` class and set its value through constructor injection. In our `App` class, inject a `ConsoleSensorViewer` via the new parameter you added to `ControlUnit`. In the `ControlUnit::pollSensors()` method, Use the injected `SensorViewer` to handle displaing information about triggered sensors.
+:pencil2: Add a private instance variable of type `SensorViewer` to our `ControlUnit` class and set its value through constructor injection. In our `App` class, inject a `ConsoleSensorViewer` via the new parameter you added to `ControlUnit`. In the `ControlUnit::pollSensors()` method, Use the injected `SensorViewer` to handle displaying information about triggered sensors.
 
 :book: The result should look like this (Sensor-related parts   omitted):
 
