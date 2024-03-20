@@ -7,8 +7,8 @@ public class App {
   public static void main(String[] args) {
     FireSensor fireSensor = new FireSensor();
     SmokeSensor smokeSensor = new SmokeSensor();
-    ControlUnit controlUnit = new ControlUnit(fireSensor, smokeSensor);
     ConsoleSensorViewer consoleSensorViewer = new ConsoleSensorViewer();
+    ControlUnit controlUnit = new ControlUnit(fireSensor, smokeSensor, consoleSensorViewer);
 
     Scanner scanner = new Scanner(System.in);
     String input = "";

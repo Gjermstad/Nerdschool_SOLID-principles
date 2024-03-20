@@ -7,10 +7,12 @@ public class ControlUnit {
 
   //# Fields
   private final ArrayList<Sensor> sensors;
+  private SensorViewer sensorViewer;
 
   //# Constructor
-  public ControlUnit(FireSensor fireSensor, SmokeSensor smokeSensor) {
+  public ControlUnit(FireSensor fireSensor, SmokeSensor smokeSensor, SensorViewer sensorViewer) {
     this.sensors = new ArrayList<>();
+    this.sensorViewer = sensorViewer;
     sensors.add(fireSensor);
     sensors.add(smokeSensor);
   }
@@ -29,5 +31,7 @@ public class ControlUnit {
         sensor.setBatteryPercentage();
       }
     }
+
+    sensorViewer.displayTriggeredSensors(sensors);
   }
 }

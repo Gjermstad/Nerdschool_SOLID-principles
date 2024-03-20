@@ -2,10 +2,10 @@ package nerdschool;
 
 import java.util.List;
 
-public class ConsoleSensorViewer
-{
+public class ConsoleSensorViewer implements SensorViewer {
   //# Methods
   public void displayTriggeredSensors(List<Sensor> triggeredSensors) {
+
     if (triggeredSensors.isEmpty()) {
       System.out.println("No sensors were triggered");
     } else {
@@ -13,5 +13,6 @@ public class ConsoleSensorViewer
         System.out.printf("A %s sensor was triggered at %s%n", sensor.getSensorType(), sensor.getLocation());
       }
     }
+
   }
 }
