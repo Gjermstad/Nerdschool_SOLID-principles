@@ -78,7 +78,7 @@ classDiagram
     <<interface>> SensorViewer
     class ControlUnit{
       -SensorViewer : sensorViewer
-      -List~Sensor~ : senors
+      -List~Sensor~ : sensors
       +ControlUnit(List~Sensor~ : sensors, SensorViewer : sensorViewer)
       +pollSensors()
     }
